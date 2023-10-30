@@ -1,10 +1,10 @@
 ---
 title: "Do Disadvantaged Students Benefit from Attending Classes with More Skilled Colleagues? Evidence From a Top University in Brazil  (joint with Rodrigo Oliveira and Henrique Motte)"
-collection: publications
+collection: rr
 permalink: /publication/aa-class-allocation
 excerpt: 'Lower performance and mismatch -- a situation where students would be better off if not enrolled in an elite university or prestigious major -- is one of the main concerns surrounding affirmative action (AA) policies in higher education. Miss-perception about the major and lack of proper preparation are appointed as the main causes of these problems. However, what if other causes explain the affirmative action students’ lower performance? Using two rich administrative data sets and a rule of admission at one top university in Brazil that splits students into two classes, we apply a regression discontinuity design to study the effect of class allocation on academic performance and labor market outcomes. The last student of the first class will have higher-ability peers but a lower ordinal rank than the first student of the second class. These effects usually play in different directions. The main results suggest that affirmative action students in technology and health sciences majors are negatively impacted by being the last student in the first class.'
 date: 2023-01-01
-venue: Labour Economics (R&R)
+venue: Labour Economics
 paperurl: '/files/class-allocation.pdf'
 ---
 Lower performance and mismatch -- a situation where students would be better off if not enrolled in an elite university or prestigious major -- is one of the main concerns surrounding affirmative action (AA) policies in higher education. Miss-perception about the major and lack of proper preparation are appointed as the main causes of these problems. However, what if other causes explain the affirmative action students’ lower performance? Using two rich administrative data sets and a rule of admission at one top university in Brazil that splits students into two classes, we apply a regression discontinuity design to study the effect of class allocation on academic performance and labor market outcomes. The last student of the first class will have higher-ability peers but a lower ordinal rank than the first student of the second class. These effects usually play in different directions. The main results suggest that affirmative action students in technology and health sciences majors are negatively impacted by being the last student in the first class.

@@ -1,15 +1,16 @@
 ---
 title: "Bridging the Gap: Mismatch Effects and Catch-Up Dynamics in a Brazilian College Affirmative Action (joint with Rodrigo Oliveira and Edson Severnini)"
-collection: publications
+collection: rr
 permalink: /publication/bridging-the-gap
 excerpt: '*Abstract*:
 
 Affirmative action in higher education can lead to mismatch, where students admitted through preferential treatment struggle academically due to inadequate preparation before college. Although some students may face initial challenges, by providing access to quality education for talented individuals who might have otherwise been overlooked due to systemic disadvantages, these programs may enable students to bridge the gap and catch up to their peers. In this study, we examine the effects of a quota-type affirmative action policy on gaps in college outcomes between potential beneficiaries and non-beneficiaries. Using comprehensive administrative data from a leading Brazilian university which implemented affirmative action in 2005, we find that compared to their non-quota peers, potential quota beneficiaries are less likely to progress smoothly through college and less likely to graduate, a result that is mostly driven by those who would not be admitted to the university otherwise. Notably, however, most of these differences shrink as the students progress through college, suggesting a catch-up effect between those groups. While potential quota students initially face challenges, resulting in a reduced course load in their early college years, they compensate by taking more credits in later years to ultimately graduate.'
 date: 2023-01-01
-venue: 'Economics of Education Review (R&R)'
+venue: 'Economics of Education Review'
 paperurl: '/files/bridging_the_gap.pdf'
 ---
 Abstract:
 
 Affirmative action in higher education can lead to mismatch, where students admitted through preferential treatment struggle academically due to inadequate preparation before college. Although some students may face initial challenges, by providing access to quality education for talented individuals who might have otherwise been overlooked due to systemic disadvantages, these programs may enable students to bridge the gap and catch up to their peers. In this study, we examine the effects of a quota-type affirmative action policy on gaps in college outcomes between potential beneficiaries and non-beneficiaries. Using comprehensive administrative data from a leading Brazilian university which implemented affirmative action in 2005, we find that compared to their non-quota peers, potential quota beneficiaries are less likely to progress smoothly through college and less likely to graduate, a result that is mostly driven by those who would not be admitted to the university otherwise. Notably, however, most of these differences shrink as the students progress through college, suggesting a catch-up effect between those groups. While potential quota students initially face challenges, resulting in a reduced course load in their early college years, they compensate by taking more credits in later years to ultimately graduate.
+
 [Download paper here](/files/bridging_the_gap.pdf)
