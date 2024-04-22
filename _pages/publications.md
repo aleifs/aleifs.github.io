@@ -17,3 +17,13 @@ author_profile: true
 {% for post in site.rr reversed %}
   {% include archive-single.html %}
 {% endfor %}
+
+## Working Papers
+{% for post in site.wp reversed %}
+  {% include archive-single.html %}
+{% endfor %}
+
+## Work in Progress
+{% for post in site.workinprogress reversed %}
+  {% include archive-single.html %}
+{% endfor %}
