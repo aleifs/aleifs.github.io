@@ -8,7 +8,7 @@ author_profile: true
 ### ANPEC Prep Course
 
 1. Statistics, Graduate Economics National Exam Prep Course, 2019
-2. Statistics, Graduate Economics National Exam Prep Course, 2019 to 2021
+2. Mathematics, Graduate Economics National Exam Prep Course, 2019 to 2021
 
 ### Graduate (UFBA)
 

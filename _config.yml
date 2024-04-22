@@ -190,7 +190,12 @@ collections:
   talks:
     output: true
     permalink: /:collection/:path/
-
+  wp:
+    output: true
+    permalink: /:collection/:path/
+  workinprogress:
+    output: true
+  
 
 # Defaults
 defaults:

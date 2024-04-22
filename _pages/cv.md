@@ -11,8 +11,8 @@ redirect_from:
 
 ### Education
 
-* B.S. in Mechanical Engineering, Federal University of Bahai, 2016
-* M.Sc. in Economics, Federal University of Bahai, 2020
+* B.S. in Mechanical Engineering, Federal University of Bahia, 2016
+* M.Sc. in Economics, Federal University of Bahia, 2020
 * Ph.D in Economics, São Paulo School of Economics, 2024 (expected)
 
 ### Publications
