@@ -13,7 +13,7 @@ redirect_from:
 
 * B.S. in Mechanical Engineering, Federal University of Bahia, 2016
 * M.Sc. in Economics, Federal University of Bahia, 2020
-* Ph.D in Economics, São Paulo School of Economics, 2024 (expected)
+* Ph.D in Economics, São Paulo School of Economics, 2024
 
 ### Publications
 
