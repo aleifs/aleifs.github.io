@@ -1,31 +1,67 @@
-A Github Pages template for academic websites. This was forked (then detached) by [Stuart Geiger](https://github.com/staeiou) from the [Minimal Mistakes Jekyll Theme](https://mmistakes.github.io/minimal-mistakes/), which is © 2016 Michael Rose and released under the MIT License. See LICENSE.md.
+# aleisantos.com
 
-I think I've got things running smoothly and fixed some major bugs, but feel free to file issues or make pull requests if you want to improve the generic template / theme.
+Personal academic website of **Alei Fernandes Santos** — Assistant Professor at the
+São Paulo School of Business Administration (FGV-EAESP).
 
-### Note: if you are using this repo and now get a notification about a security vulnerability, delete the Gemfile.lock file. 
+Plain HTML, CSS and JavaScript. **No build step and no dependencies**: what is in the
+repository is exactly what is served. Published with GitHub Pages from the `master`
+branch, at the custom domain in `CNAME`.
 
-# Instructions
+## Structure
 
-1. Register a GitHub account if you don't have one and confirm your e-mail (required!)
-1. Fork [this repository](https://github.com/academicpages/academicpages.github.io) by clicking the "fork" button in the top right. 
-1. Go to the repository's settings (rightmost item in the tabs that start with "Code", should be below "Unwatch"). Rename the repository "[your GitHub username].github.io", which will also be your website's URL.
-1. Set site-wide configuration and create content & metadata (see below -- also see [this set of diffs](http://archive.is/3TPas) showing what files were changed to set up [an example site](https://getorg-testacct.github.io) for a user with the username "getorg-testacct")
-1. Upload any files (like PDFs, .zip files, etc.) to the files/ directory. They will appear at https://[your GitHub username].github.io/files/example.pdf.  
-1. Check status by going to the repository settings, in the "GitHub pages" section
-1. (Optional) Use the Jupyter notebooks or python scripts in the `markdown_generator` folder to generate markdown files for publications and talks from a TSV file.
+```
+index.html              Home / about
+publications/           Research — published, working papers, work in progress
+teaching/               Courses taught
+talks/                  Conference presentations, seminars, panels
+cv/                     Curriculum vitae (summary + link to the PDF)
+contact/                Contact details
+404.html                Not-found page
 
-See more info at https://academicpages.github.io/
+css/style.css           All styling; design tokens at the top of the file
+js/main.js              Theme toggle, mobile nav, active link, e-mail obfuscation
+files/                  PDFs (papers, CV)
+images/                 Profile photo
+favicon.svg             Monogram favicon (+ favicon-32.png, apple-touch-icon.png)
+.nojekyll               Tells GitHub Pages to serve the files as-is
+```
 
-## To run locally (not on GitHub Pages, to serve on your own computer)
+## Editing
 
-1. Clone the repository and made updates as detailed above
-1. Make sure you have ruby-dev, bundler, and nodejs installed: `sudo apt install ruby-dev ruby-bundler nodejs`
-1. Run `bundle clean` to clean up the directory (no need to run `--force`)
-1. Run `bundle install` to install ruby dependencies. If you get errors, delete Gemfile.lock and try again.
-1. Run `bundle exec jekyll liveserve` to generate the HTML and serve it from `localhost:4000` the local server will automatically rebuild and refresh the pages on change.
+Everything is hand-edited HTML — open the relevant file and change the markup.
 
-# Changelog -- bugfixes and enhancements
+- **Add a paper** — copy an existing `<li class="pub">` block in
+  [`publications/index.html`](publications/index.html) into the right section and edit
+  it. `<span class="tag">` is the label (Published / Working paper / In progress); the
+  optional `<details class="abstract">` block holds the abstract. Put the PDF in
+  `files/` and point the `.link-btn` at it.
+- **Add a talk** — copy an `<li class="talk">` block in
+  [`talks/index.html`](talks/index.html); the list is newest first.
+- **Add a course** — copy an `<li>` in the relevant `<ul class="course-list">` in
+  [`teaching/index.html`](teaching/index.html).
+- **Change colours or spacing** — edit the custom properties in the `:root` and
+  `:root[data-theme="dark"]` blocks at the top of `css/style.css`. Both themes must be
+  updated together.
+- **The header and footer are duplicated in every page.** If you change the navigation,
+  change it in all seven HTML files.
 
-There is one logistical issue with a ready-to-fork template theme like academic pages that makes it a little tricky to get bug fixes and updates to the core theme. If you fork this repository, customize it, then pull again, you'll probably get merge conflicts. If you want to save your various .yml configuration files and markdown files, you can delete the repository and fork it again. Or you can manually patch. 
+## Preview locally
 
-To support this, all changes to the underlying code appear as a closed issue with the tag 'code change' -- get the list [here](https://github.com/academicpages/academicpages.github.io/issues?q=is%3Aclosed%20is%3Aissue%20label%3A%22code%20change%22%20). Each issue thread includes a comment linking to the single commit or a diff across multiple commits, so those with forked repositories can easily identify what they need to patch.
+```bash
+python -m http.server 8000
+# then open http://localhost:8000
+```
+
+A plain file:// open also mostly works, but the root-relative paths (`/css/style.css`)
+need a server.
+
+## History
+
+The site previously used Jekyll (a fork of
+[academicpages](https://github.com/academicpages/academicpages.github.io) /
+minimal-mistakes). That version is preserved on the **`jekyll-backup`** branch.
+
+## License
+
+Site content © Alei Fernandes Santos. The original template's MIT license is retained
+in [LICENSE](LICENSE).

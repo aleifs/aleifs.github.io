@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://aleisantos.com/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://aleisantos.com/publications/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://aleisantos.com/teaching/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://aleisantos.com/talks/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://aleisantos.com/cv/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+  <url>
+    <loc>https://aleisantos.com/contact/</loc>
+    <changefreq>monthly</changefreq>
+  </url>
+</urlset>
