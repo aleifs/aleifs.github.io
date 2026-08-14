@@ -589,6 +589,47 @@ li::marker { color: var(--text-faint); }
 
 .link-btn svg { width: 14px; height: 14px; }
 
+.pub-note {
+  font-size: var(--step--1);
+  color: var(--text-muted);
+  margin: var(--sp-3) 0 0;
+}
+
+/* Press coverage of a paper, listed inside the paper's own entry. */
+.pub-media {
+  margin-top: var(--sp-3);
+  font-size: var(--step--1);
+}
+
+.pub-media-label {
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+  margin: 0 0 var(--sp-2);
+}
+
+.pub-media ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.pub-media li {
+  margin: 0;
+  padding-left: var(--sp-3);
+  border-left: 2px solid var(--border);
+  line-height: 1.5;
+}
+
+.pub-media li + li { margin-top: var(--sp-2); }
+
+.pub-media-outlet {
+  display: block;
+  color: var(--text-faint);
+}
+
 details.abstract {
   margin-top: var(--sp-3);
   font-size: var(--step--1);
