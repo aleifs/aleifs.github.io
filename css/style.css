@@ -875,6 +875,121 @@ details.abstract > summary:hover { color: var(--accent); }
 .contact-card a { font-weight: 500; }
 
 /* ==========================================================================
+   Private files (private/index.html, js/private.js)
+   ========================================================================== */
+
+.vault-form[hidden],
+#vault-list[hidden] { display: none; }
+
+.vault-form label {
+  display: block;
+  margin-bottom: var(--sp-2);
+  font-weight: 500;
+}
+
+.vault-row {
+  display: flex;
+  gap: var(--sp-2);
+  max-width: 28rem;
+}
+
+.vault-row input {
+  flex: 1;
+  min-width: 0;
+  padding: 0.45rem 0.7rem;
+  font: inherit;
+  color: var(--text);
+  background: var(--bg-elev);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+}
+
+.vault-row input:focus { border-color: var(--accent); }
+
+.vault-btn {
+  padding: 0.45rem 1rem;
+  font: inherit;
+  font-weight: 500;
+  color: var(--bg);
+  background: var(--accent);
+  border: 1px solid var(--accent);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.vault-btn:hover { background: var(--accent-hover); }
+
+.vault-btn:disabled,
+.vault-files .link-btn:disabled { opacity: 0.6; cursor: progress; }
+
+.vault-status {
+  min-height: 1.5em;
+  margin: var(--sp-3) 0;
+  color: var(--text-muted);
+}
+
+.vault-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-5);
+  color: var(--text-muted);
+  font-size: var(--step--1);
+}
+
+.vault-bar .link-btn,
+.vault-files .link-btn {
+  font: inherit;
+  font-size: var(--step--1);
+  font-weight: 500;
+  background: none;
+  cursor: pointer;
+}
+
+.vault-bar .link-btn:hover,
+.vault-files .link-btn:hover { background: var(--accent-soft); }
+
+.vault-group { margin-bottom: var(--sp-6); }
+
+.vault-group > h2 {
+  font-size: var(--step-1);
+  margin-bottom: var(--sp-3);
+}
+
+.vault-files {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  border-top: 1px solid var(--border);
+}
+
+.vault-files li {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--sp-4);
+  margin: 0;
+  padding: var(--sp-3) 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.vault-files li > div { min-width: 0; }
+
+.vault-name {
+  display: block;
+  font-weight: 500;
+  overflow-wrap: anywhere;
+}
+
+.vault-meta {
+  display: block;
+  font-size: var(--step--1);
+  color: var(--text-faint);
+}
+
+.vault-files .link-btn { flex-shrink: 0; }
+
+/* ==========================================================================
    Footer
    ========================================================================== */
 
