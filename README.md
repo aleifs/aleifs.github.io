@@ -61,13 +61,15 @@ too, and every commit carries the same message.
 
 The originals live in the Drive folder `gdrive_work:Site privado`, mounted on the
 server at `~/Cloud/Site privado` (unit `cloud-mount@site-privado`). Subfolders become
-headings on the page. To publish:
+headings on the page. To publish, from any folder:
 
 ```bash
-python tools/publish_private.py --dry-run   # what would change
-python tools/publish_private.py             # encrypt, commit private/vault.json and private/blobs/
-git push
+update-private --dry-run   # what would change
+update-private             # encrypt, commit private/vault.json and private/blobs/, push
 ```
+
+`update-private` is `tools/update-private`, linked from `~/.local/bin`. It runs
+`tools/publish_private.py` and pushes only when that run made a new commit.
 
 The script asks for the password every time and never stores it. The first run sets
 it (at least 16 characters). It adds new and changed files, drops the ones removed

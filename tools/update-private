@@ -1,0 +1,21 @@
+#!/bin/bash
+# update-private — encrypt the files of ~/Cloud/Site privado and publish them on
+# aleisantos.com/private/. Runs tools/publish_private.py, which asks for the password
+# and commits, then pushes only if that run made a new commit.
+#
+#   update-private              encrypt, commit, push
+#   update-private --dry-run    show what would change, write and push nothing
+#
+# Linked from ~/.local/bin/update-private, so it runs from any folder.
+set -euo pipefail
+
+REPO="$(cd "$(dirname "$(readlink -f "$0")")/.." && pwd)"
+
+before=$(git -C "$REPO" rev-parse HEAD)
+python "$REPO/tools/publish_private.py" "$@"
+after=$(git -C "$REPO" rev-parse HEAD)
+
+if [ "$before" != "$after" ]; then
+    git -C "$REPO" push -q
+    echo "Pushed. aleisantos.com/private/ updates in a minute or two."
+fi

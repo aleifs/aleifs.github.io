@@ -218,7 +218,7 @@ def main():
         paths.append('private/blobs')
     git('add', '-A', '--', *paths)
     git('commit', '-q', '-m', COMMIT_MESSAGE, '--', *paths)
-    print(f'Committed. The page lists {len(files)} file(s). Publish with: git -C {REPO} push')
+    print(f'Committed. The page lists {len(files)} file(s).')
 
 
 if __name__ == '__main__':
